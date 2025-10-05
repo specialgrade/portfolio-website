@@ -4,48 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aly's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="icon" href=""> -->
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/bafabc6d1d.js" crossorigin="anonymous"></script>
+    <!-- <link rel="icon" href="logo.jpg"> -->
 </head>
 <body>
     <header>
-        <div>
+        <div id="logo">
             <!-- <img src="" alt="portfolio-logo"> -->
              <h4>Aly's Portfolio</h4>
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="projetcs.html">Projects</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div id="hero">
-            <!-- - Short headline/intro (e.g., "Hi, I’m Aly...")
-             - One-liner about what you do
-             - Call-to-action button (e.g., "View My Work")
-             - Photo or illustration -->
+            <div id="left-sec">
+                <h1>Hello, I'm Aly!</h1>
+                <p id="introduction">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque malesuada enim interdum luctus. Aenean egestas nisi orci, ac porta risus aliquam sed. Nulla facilisi. Suspendisse fermentum, lorem id facilisis sollicitudin, diam est molestie justo, vitae ultricies urna dolor sit amet nulla. Mauris velit dolor, pretium ut molestie id, euismod vitae leo. Praesent hendrerit vitae magna nec commodo. Phasellus dapibus ante vel turpis iaculis, eu ultricies est convallis. </p>
+                <button id="projects-btn">View My Work</button>
+            </div>
+            <div id="right-sec">
+                <img src="assets\profile.jpg" alt="Alyssa Marie Dela Cruz smiling at the camera">
+            </div>
+        </div>
+        
+        <div id="one-liner" class="italic">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         </div>
         
         <div id="tech-stack">
-            <!--  - Display icons/logos of tools (HTML, CSS, JS, Figma, GitHub, etc.)
-                  - Short captions for skills (e.g., "Frontend Development")-->
-        </div>
-
-        <div id="projs-prev">
-            <!--  - Project cards with title, description, screenshot
-                  - Links to live demo / GitHub-->
+            <div id="frontend-stack">
+                <div id="html">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>Hypertext Markup Language</p>
+                </div>
+                <div id="css">
+                    <i class="fa-brands fa-css"></i>
+                    <p>Cascading Style Sheet</p>
+                </div>
+                <div id="js">
+                    <i class="fa-brands fa-js"></i>
+                    <p>Javascript</p>
+                </div>
+            </div>
+            <div id="tools-stack">
+                <div id="git">
+                    <i class="fa-brands fa-git"></i>
+                    <p>Git</p>
+                </div>
+                <div id="github">
+                    <i class="fa-brands fa-github"></i>
+                    <p>Github</p>
+                </div>
+                <div id="figma">
+                    <i class="fa-brands fa-figma"></i>
+                    <p>Figma</p>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer>
-        <!-- - Email, LinkedIn, GitHub links
-             - Optional short message (e.g., "Let’s build something amazing together!")
-             - Footer credits ("© 2025 Aly. All Rights Reserved.") -->
+        <h5>Let's build something together!</h5>
+        <p>&copy; 2025 Aly. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
