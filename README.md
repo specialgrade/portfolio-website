@@ -11,7 +11,7 @@ This is my **personal portfolio website** showcasing my projects, skills, and ba
 - About Me section   
 - Projects showcase  
 - Contact form / social links  
-- Responsive design for desktop & mobile  
+- Responsive design for desktop 
 
 ## Preview  
 ![Preview](src/assets/images/Preview.png)
