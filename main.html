@@ -17,10 +17,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="main.html">Home</a></li>
-                <li><a href="about-me.html">About Me</a></li>
-                <li><a href="projetcs.html">Projects</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
     </header>
@@ -29,32 +29,30 @@
         <!-- HERO -->
         <div id="hero">
             <div id="left-sec">
-                <h1>Hello, I'm Aly!</h1>
-                <p id="introduction">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque malesuada enim interdum luctus. Aenean egestas nisi orci, ac porta risus aliquam sed. Nulla facilisi. Suspendisse fermentum, lorem id facilisis sollicitudin, diam est molestie justo, vitae ultricies urna dolor sit amet nulla. Mauris velit dolor, pretium ut molestie id, euismod vitae leo. Praesent hendrerit vitae magna nec commodo. Phasellus dapibus ante vel turpis iaculis, eu ultricies est convallis. </p>
-                <button id="projects-btn">View My Work</button>
+                <img src="assets\profile.jpg" alt="Alyssa Marie Dela Cruz smiling at the camera">
             </div>
             <div id="right-sec">
-                <img src="assets\profile.jpg" alt="Alyssa Marie Dela Cruz smiling at the camera">
+                <h1>Hello, I'm Aly!</h1>
+                <p id="tag-line" class="italic">I design with intent and build with vision.</p>
+                <button id="projects-btn">View My Work</button>
             </div>
         </div>
         
-        <div id="one-liner" class="italic">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <div>
+            <!-- <img src="" alt="Divider"> -->
         </div>
         
         <!-- ABOUT ME -->
         <div id="about-me-card">
-            <div id="left-sec">
-                <img src="assets\profile.jpg" alt="Alyssa Marie Dela Cruz smiling at the camera">
-            </div>
-            <div id="right-sec">
-                <p id="introduction">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque malesuada enim interdum luctus. Aenean egestas nisi orci, ac porta risus aliquam sed. Nulla facilisi. Suspendisse fermentum, lorem id facilisis sollicitudin, diam est molestie justo, vitae ultricies urna dolor sit amet nulla. Mauris velit dolor, pretium ut molestie id, euismod vitae leo. Praesent hendrerit vitae magna nec commodo. Phasellus dapibus ante vel turpis iaculis, eu ultricies est convallis. </p>
-            </div>
+            <h2>About Me</h2>
+            <p id="introduction">Hi! I’m <strong>Aly</strong>, a passionate <span class="underline">UI/UX Designer</span> and <span class="underline">Frontend Developer</span> with a strong eye for clean, functional, and visually engaging designs. I enjoy turning concepts into interactive experiences that blend creativity with usability. My journey in tech started with curiosity and grew into a drive to design purposeful interfaces and bring them to life through code. Beyond design tools and development, I value collaboration, innovation, and the process of continuous learning — creating not just projects, but meaningful digital experiences.</p>
         </div>
 
         <!-- TECH STACK -->
         <div id="tech-stack">
             <div id="frontend-stack">
+                <h4>Frontend Development</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod cursus venenatis.</p>
                 <div id="html">
                     <i class="fa-brands fa-html5"></i>
                     <p>Hypertext Markup Language</p>
@@ -68,7 +66,21 @@
                     <p>Javascript</p>
                 </div>
             </div>
+            <div id="frontend-stack">
+                <h4>Database</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod cursus venenatis.</p>
+                <div id="mysql">
+                    <!-- <i></i> -->
+                    <p>My SQL</p>
+                </div>
+                <div id="postgre">
+                    <!-- <i></i> -->
+                    <p>Postgre SQL</p>
+                </div>
+            </div>
             <div id="tools-stack">
+                <h4>Tools</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod cursus venenatis.</p>
                 <div id="git">
                     <i class="fa-brands fa-git"></i>
                     <p>Git</p>
@@ -88,43 +100,62 @@
         <div id="projects-sec">
             <div class="projects">
                 <!-- <img src="" alt="" class="proj-gif"> -->
-                <h4>Project Title 1</h4>
-                <p class="proj-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel lectus pellentesque ex ultricies euismod. Praesent dolor dui, condimentum ac dolor in, tempus interdum orci. Sed cursus odio eu metus maximus accumsan.</p>
+                <div class="tags">
+                    <p>UI/UX</p>
+                    <p>Frontend</p>
+                    <p>Project Management</p>
+                </div>
+                <h4>PamantasanPH</h4>
+                <p class="proj-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="projects">
                 <!-- <img src="" alt="" class="proj-gif"> -->
-                <h4>Project Title 2</h4>
-                <p class="proj-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel lectus pellentesque ex ultricies euismod. Praesent dolor dui, condimentum ac dolor in, tempus interdum orci. Sed cursus odio eu metus maximus accumsan.</p>
+                <div class="tags">
+                    <p>UI/UX</p>
+                    <p>Frontend</p>
+                    <p>Project Management</p>
+                </div>
+                <h4>See Pangasinan</h4>
+                <p class="proj-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="projects">
                 <!-- <img src="" alt="" class="proj-gif"> -->
-                <h4>Project Title 3</h4>
-                <p class="proj-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel lectus pellentesque ex ultricies euismod. Praesent dolor dui, condimentum ac dolor in, tempus interdum orci. Sed cursus odio eu metus maximus accumsan.</p>
+                <div class="tags">
+                    <p>UI/UX</p>
+                    <p>Project Management</p>
+                </div>
+                <h4>EcoClick</h4>
+                <p class="proj-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
 
         <!-- CONTACTS -->
         <div id="contacts-card">
-            <h2>Get in touch — I’d love to hear from you!</h2>
+            <h2>Let's Connect</h2>
             <div id="email">
                 <i class="fa-solid fa-envelope"></i>
-                <button>Send me an email!</button>
+                <h4>Email</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod cursus venenatis.</p>
+                <h4>aly.mariedelacruz@gmail.com</h4>
             </div>
             <div id="linkedin">
                 <i class="fa-brands fa-linkedin"></i>
-                <button>Le'ts connect!</button>
+                <h4>LinkedIn</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod cursus venenatis.</p>
+                <h4>aly.mariedelacruz</h4>
             </div>
             <div id="phone">
-                <i class="fa-solid fa-phone"></i>
-                <p>+994 059 7041</p>
+                <i class="fa-brands fa-github"></i>
+                <h4>GitHub</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod cursus venenatis.</p>
+                <h4>specialgrade</h4>
             </div>
         </div>
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <h5>Let's build something together!</h5>
-        <p>&copy; 2025 Aly. All Rights Reserved.</p>
+        <p>&copy; 2025 Alyssa Marie D. Dela Cruz. All rights reserved.</p>
     </footer>
 </body>
 </html>
