@@ -10,8 +10,8 @@ This is my **personal portfolio website** showcasing my projects, skills, and ba
 ## Features  
 - About Me section   
 - Projects showcase  
-- Contact form / social links  
-- Responsive design for desktop 
+- Contact / social links  
+- Responsive design for desktop and mobile
 
 ## Preview  
 ![Preview](src/assets/images/Preview.png)
