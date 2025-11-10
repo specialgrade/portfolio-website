@@ -4,157 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aly's Portfolio</title>
-    <link rel="stylesheet" href="/styles.css">
+    <meta name="description" content="Hi, I'm Aly - a Frontend Developer & UI/UX Designer passionate about building clean, accessible, and user-friendly web experiences.">
+    <meta name="keywords" content="Frontend Developer, UI/UX Designer, Portfolio, Web Development, PUP">
+    <meta name="author" content="Alyssa Marie Dela Cruz">
+    <link rel="icon" type="image/svg+xml" href="src/assets/images/logo.svg">
+    <link rel="stylesheet" href="src\css\styles.css">
     <script src="https://kit.fontawesome.com/bafabc6d1d.js" crossorigin="anonymous"></script>
-    <!-- <link rel="icon" href="logo.jpg"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
     <!-- NAVBAR -->
     <header>
-        <div id="logo">
-            <!-- <img src="" alt="portfolio-logo"> -->
-             <h4>Aly's Portfolio</h4>
+        <div id="portfolio-name">
+            <h4 class="bold">Aly's Portfolio</h4>
         </div>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
+            <ul class="nav-list">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="theme-toggle" id="theme-toggle">
+            <div class="theme-toggle__circle"></div>
+        </div>
     </header>
 
     <main>
         <!-- HERO -->
-        <div id="hero">
-            <div id="left-sec">
-                <img src="assets\profile.jpg" alt="Alyssa Marie Dela Cruz smiling at the camera">
+        <section id="hero" class="hero">
+            <div id="hero__left">
+                <img src="src/assets/images/desktop-pfp-dark.png" alt="Alyssa Marie Dela Cruz smiling at the camera" id="hero__image">
             </div>
-            <div id="right-sec">
-                <h1>Hello, I'm Aly!</h1>
-                <p id="tag-line" class="italic">I design with intent and build with vision.</p>
-                <button id="projects-btn">View My Work</button>
+            <div id="hero__right">
+                <div id="hero__text">
+                    <p>Hello, world!</p>
+                    <h1 class="bold">I'm Aly!</h1>
+                    <p>Frontend Developer & UI/UX Designer</p>
+                </div>
+                <div id="hero__btns">
+                    <button class="btn-primary" id="projects-btn">View My Work</button>
+                    <button class="btn-outline" id="cv-btn">Download CV</button>
+                </div>
+                <div id="hero__socials">
+                    <a href="https://www.facebook.com/aly.mariedelacruz/" target="_blank" rel="noopener noreferrer" title="Visit My Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alymariedelacruz" target="_blank" rel="noopener noreferrer" title="Visit My LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/specialgrade" target="_blank" rel="noopener noreferrer" title="Visit My GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-        
-        <div>
-            <!-- <img src="" alt="Divider"> -->
-        </div>
+        </section>
         
         <!-- ABOUT ME -->
-        <div id="about-me-card">
-            <h2>About Me</h2>
-            <p id="introduction">Hi! I’m <strong>Aly</strong>, a passionate <span class="underline">UI/UX Designer</span> and <span class="underline">Frontend Developer</span> with a strong eye for clean, functional, and visually engaging designs. I enjoy turning concepts into interactive experiences that blend creativity with usability. My journey in tech started with curiosity and grew into a drive to design purposeful interfaces and bring them to life through code. Beyond design tools and development, I value collaboration, innovation, and the process of continuous learning — creating not just projects, but meaningful digital experiences.</p>
-        </div>
+        <section id="about" class="about">
+            <div id="about__left">
+                <h1>About Me</h1>
+                <p id="about_intro">Hey there! I'm Aly, a <span class="bold">3rd-year IT student</span> from the <span class="bold">Polytechnic University of the Philippines</span> who's deeply passionate about <span class="underline">web development and design</span>.
+
+                I love bringing interfaces to life through <span class="underline">frontend development and UI/UX design</span>, and I'm currently gearing up to explore <span class="underline">backend development</span> next. 
+
+                I take pride in my eye for detail, organized workflow, and the way I lead with collaboration and initiative.</p>
+            </div>
+            <div id="about__right">
+                <h3>Key Skills</h3>
+                <ul class="about_skills">
+                    <li>Web Development</li>
+                    <li>UI/UX Design</li>
+                    <li>Database Management</li>
+                    <li>Project Management</li>
+                </ul>
+            </div>
+        </section>
 
         <!-- TECH STACK -->
-        <div id="tech-stack">
-            <div id="frontend-stack">
-                <h4>Frontend Development</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod cursus venenatis.</p>
-                <div id="html">
+        <section id="tech-stack" class="tech-stack">
+            <h1>Tech Stack</h1>
+            <div class="tech-stack__cards">
+                <div class="tech-card">
+                    <h4>Web Development</h4>
                     <i class="fa-brands fa-html5"></i>
-                    <p>Hypertext Markup Language</p>
-                </div>
-                <div id="css">
                     <i class="fa-brands fa-css"></i>
-                    <p>Cascading Style Sheet</p>
-                </div>
-                <div id="js">
                     <i class="fa-brands fa-js"></i>
-                    <p>Javascript</p>
-                </div>
-            </div>
-            <div id="frontend-stack">
-                <h4>Database</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod cursus venenatis.</p>
-                <div id="mysql">
-                    <!-- <i></i> -->
-                    <p>My SQL</p>
-                </div>
-                <div id="postgre">
-                    <!-- <i></i> -->
-                    <p>Postgre SQL</p>
-                </div>
-            </div>
-            <div id="tools-stack">
-                <h4>Tools</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod cursus venenatis.</p>
-                <div id="git">
-                    <i class="fa-brands fa-git"></i>
-                    <p>Git</p>
-                </div>
-                <div id="github">
-                    <i class="fa-brands fa-github"></i>
-                    <p>Github</p>
-                </div>
-                <div id="figma">
                     <i class="fa-brands fa-figma"></i>
-                    <p>Figma</p>
+                </div>
+                <div class="tech-card">
+                    <h4>Database Management</h4>
+                    <i class="devicon-mysql-original"></i>
+                    <i class="devicon-postgresql-plain"></i>
+                </div>
+                <div class="tech-card">
+                    <h4>Version Control</h4>
+                    <i class="fa-brands fa-git"></i>
+                    <i class="fa-brands fa-github"></i>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- PROJECTS -->
-        <div id="projects-sec">
-            <div class="projects">
-                <!-- <img src="" alt="" class="proj-gif"> -->
-                <div class="tags">
-                    <p>UI/UX</p>
-                    <p>Frontend</p>
-                    <p>Project Management</p>
+        <div id="projects" class="projects">
+            <h1>My Projects</h1>
+            <div class="projects__container">
+                <!-- PROJECT 1 -->
+                <div class="project__card">
+                    <img src="src/assets/images/PamantasanPH.png" alt="PamantasanPH Preview" alt="Screenshot of PamantasanPH Web App Homepage" class="project__img">
+
+                    <div class="project__details">
+                        <div class="project__tags">
+                            <span class="tag">Frontend</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Project Management</span>
+                        </div>
+                        <h3 class="project__title">PamantasanPH</h3>
+                        <p class="project__desc">A university search engine built to help incoming college students discover and explore universities across the Philippines.</p>
+                        <div class="project-links">
+                            <a href="" class="btn-outline">Live Demo</a>
+                            <a href="" class="btn-outline">GitHub Repo</a>
+                        </div>
+                    </div>
                 </div>
-                <h4>PamantasanPH</h4>
-                <p class="proj-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="projects">
-                <!-- <img src="" alt="" class="proj-gif"> -->
-                <div class="tags">
-                    <p>UI/UX</p>
-                    <p>Frontend</p>
-                    <p>Project Management</p>
+
+                <!-- PROJECT 2 -->
+                <div class="project__card">
+                    <img src="src/assets/images/SeePangasinan.png" alt="See Pangasinan Preview" alt="Screenshot of See Pangasinan Website Homepage" class="project__img">
+
+                    <div class="project__details">
+                        <div class="project__tags">
+                            <span class="tag">Frontend</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Project Management</span>
+                        </div>
+                        <h3 class="project__title">See Pangasinan</h3>
+                        <p class="project__desc">A tourism and culture website highlighting the beauty, history, and attractions of the province of Pangasinan.</p>
+                        <div class="project__links">
+                            <a href="" class="btn-outline">Live Demo</a>
+                            <a href="" class="btn-outline">GitHub Repo</a>
+                        </div>
+                    </div>
                 </div>
-                <h4>See Pangasinan</h4>
-                <p class="proj-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="projects">
-                <!-- <img src="" alt="" class="proj-gif"> -->
-                <div class="tags">
-                    <p>UI/UX</p>
-                    <p>Project Management</p>
+
+                <!-- PROJECT 3 -->
+                <div class="project__card">
+                    <img src="src/assets/images/EcoClick.png" alt="EcoClick Preview" alt="Screenshot of EcoClick Wireframe Home Screen" class="project__img">
+
+                    <div class="project__details">
+                        <div class="project__tags">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Project Management</span>
+                        </div>
+                        <h3 class="project__title">EcoClick</h3>
+                        <p class="project__desc">A wireframe concept for an interactive game that promotes environmental awareness through virtual clean-up challenges</p>
+                        <div class="project__links">
+                            <a href="" class="btn-outline">Live Demo</a>
+                            <a href="" class="btn-outline">Prototype</a>
+                        </div>
+                    </div>
                 </div>
-                <h4>EcoClick</h4>
-                <p class="proj-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
 
         <!-- CONTACTS -->
-        <div id="contacts-card">
-            <h2>Let's Connect</h2>
-            <div id="email">
-                <i class="fa-solid fa-envelope"></i>
-                <h4>Email</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod cursus venenatis.</p>
-                <h4>aly.mariedelacruz@gmail.com</h4>
+        <section id="contact" class="contact">
+            <h1>Let's Connect</h1>
+            <div class="contact__content">
+                <p>I'm currently accepting new projects and collaborations. Let's talk!</p>
+                <a href="mailto:aly.mariedelacruz@gmail.com">aly.mariedelacruz@gmail.com</a>
             </div>
-            <div id="linkedin">
-                <i class="fa-brands fa-linkedin"></i>
-                <h4>LinkedIn</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod cursus venenatis.</p>
-                <h4>aly.mariedelacruz</h4>
-            </div>
-            <div id="phone">
-                <i class="fa-brands fa-github"></i>
-                <h4>GitHub</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod cursus venenatis.</p>
-                <h4>specialgrade</h4>
-            </div>
-        </div>
+        </section>
     </main>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 Alyssa Marie D. Dela Cruz. All rights reserved.</p>
     </footer>
 </body>
