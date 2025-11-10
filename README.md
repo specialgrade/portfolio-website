@@ -14,7 +14,7 @@ This is my **personal portfolio website** showcasing my projects, skills, and ba
 - Responsive design for desktop and mobile
 
 ## Preview  
-![Preview](src/assets/images/preview.png)
+![Preview](src\assets\images\preview.png)
 
 ## Tech Stack  
 - **Design:** Figma 
